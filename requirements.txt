@@ -1,0 +1,9 @@
+ipywidgets
+nbformat
+pandas
+pyarrow
+pyspark
+delta
+py4j
+delta-spark
+setuptools
