@@ -8,4 +8,3 @@ py4j
 delta-spark
 setuptools
 matplotlib
-folium
