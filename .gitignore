@@ -157,3 +157,4 @@ venv.bak/
 .ropeproject
 
 testdata
+spark-warehouse
