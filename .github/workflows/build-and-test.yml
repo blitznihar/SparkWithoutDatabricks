@@ -31,7 +31,7 @@ jobs:
 
     - name: Run Jupyter Notebook
       run: |
-        jupyter nbconvert --to notebook --execute --inplace path/to/your/notebook.ipynb
+        jupyter nbconvert --to notebook --execute --inplace main.ipynb
 
     # - name: Run tests
     #   run: |
