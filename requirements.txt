@@ -8,3 +8,6 @@ py4j
 delta-spark
 setuptools
 matplotlib
+pytest
+ipytest
+nbmake
