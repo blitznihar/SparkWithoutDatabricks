@@ -31,7 +31,12 @@ jobs:
 
     - name: Run Jupyter Notebook
       run: |
+        jupyter nbconvert --to notebook --execute --inplace installrequirements.ipynb
+        jupyter nbconvert --to notebook --execute --inplace reuseGenerateData.ipynb
         jupyter nbconvert --to notebook --execute --inplace main.ipynb
+        jupyter nbconvert --to notebook --execute --inplace initializespark.ipynb
+        jupyter nbconvert --to notebook --execute --inplace healthdataanalysis.ipynb
+        
 
     - name: Run tests
       run: |
