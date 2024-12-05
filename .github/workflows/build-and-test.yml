@@ -33,6 +33,6 @@ jobs:
       run: |
         jupyter nbconvert --to notebook --execute --inplace main.ipynb
 
-    # - name: Run tests
-    #   run: |
-    #     pytest tests/
+    - name: Run tests
+      run: |
+        pytest --nbmake tests/
