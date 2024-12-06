@@ -43,7 +43,7 @@ jobs:
         isort --check-only .
     - name: Run security scan
       run: |
-        bandit -r 
+        bandit -r *.ipynb
 
     - name: Run Jupyter Notebook
       run: |
