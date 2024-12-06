@@ -28,11 +28,29 @@ jobs:
         pip install -r requirements.txt
         pip install pyspark
         pip install jupyter
+        pip install nbmake
+        pip install flake8
+        pip install pytest-cov
+    
+    - name: Run static code analysis
+      run: |
+        flake8 .
 
     - name: Run Jupyter Notebook
       run: |
+        jupyter nbconvert --to notebook --execute --inplace installrequirements.ipynb
+        jupyter nbconvert --to notebook --execute --inplace reuseGenerateData.ipynb
         jupyter nbconvert --to notebook --execute --inplace main.ipynb
+        jupyter nbconvert --to notebook --execute --inplace initializespark.ipynb
+        jupyter nbconvert --to notebook --execute --inplace healthdataanalysis.ipynb
+        
 
     - name: Run tests
       run: |
-        pytest --nbmake tests/
+        pytest --nbmake --cov=./ --cov-report=xml --cov-report=term tests/
+
+    - name: Upload coverage report
+      uses: actions/upload-artifact@v2
+      with:
+        name: coverage-report
+        path: coverage.xml
