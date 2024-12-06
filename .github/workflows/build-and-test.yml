@@ -31,10 +31,18 @@ jobs:
         pip install nbmake
         pip install flake8
         pip install pytest-cov
+        pip install black
+        pip install isort
+        pip install bandit
     
     - name: Run static code analysis
       run: |
         flake8 .
+        black --check .
+        isort --check-only .
+    - name: Run security scan
+      run: |
+        bandit -r 
 
     - name: Run Jupyter Notebook
       run: |
@@ -54,3 +62,9 @@ jobs:
       with:
         name: coverage-report
         path: coverage.xml
+
+    - name: Publish build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: build-artifacts
+        path: path/to/artifacts
