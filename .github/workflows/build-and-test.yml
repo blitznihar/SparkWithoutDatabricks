@@ -34,6 +34,7 @@ jobs:
         pip install black
         pip install isort
         pip install bandit
+        pip install "black[jupyter]"
     
     - name: Run static code analysis
       run: |

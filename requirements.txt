@@ -11,3 +11,8 @@ matplotlib
 pytest
 ipytest
 nbmake
+flake8
+pytest-cov
+black
+isort
+bandit
