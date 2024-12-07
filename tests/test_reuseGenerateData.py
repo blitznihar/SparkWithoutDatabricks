@@ -1,9 +1,4 @@
 import os
-import pytest
-import nbformat
-from nbconvert.preprocessors import ExecutePreprocessor
-import pandas as pd
-from io import StringIO
 from testbook import testbook
 
 # from reuseGenerateData import HealthData
@@ -16,7 +11,7 @@ def test_reuseGenerateData(tb):
         environment = "test"
         outputdir = "tests/data"
         filename = f"{outputdir}/health_data_{environment}.parquet"
-        # os.makedirs(outputdir, exist_ok=True)
+        os.makedirs(outputdir, exist_ok=True)
 
         if os.path.exists(filename):
             os.remove(filename)
@@ -28,3 +23,4 @@ def test_reuseGenerateData(tb):
         assert os.path.exists(filename), f"{filename} has not been created"
         if os.path.exists(filename):
             os.remove(filename)
+            
