@@ -11,8 +11,9 @@ matplotlib
 pytest
 ipytest
 nbmake
-flake8
+pytest-notebook
 pytest-cov
+flake8
 black
 isort
 bandit
