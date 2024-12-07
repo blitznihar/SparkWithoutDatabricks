@@ -68,4 +68,9 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: build-artifacts
-        path: path/to/artifacts
+        path: |
+          main.ipynb
+          installrequirements.ipynb
+          initializespark.ipynb
+          healthdataanalysis.ipynb
+          installrequirements.ipynb
