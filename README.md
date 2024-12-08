@@ -1,3 +1,4 @@
+https://github.com/blitznihar/SparkWithoutDatabricks/actions/workflows/build-and-test.yml/badge.svg
 <h1>PySpark, Delta Lake, Apache Arrow, Pandas</h1>
 
 <table>
