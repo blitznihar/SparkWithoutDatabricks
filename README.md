@@ -1,4 +1,12 @@
-https://github.com/blitznihar/SparkWithoutDatabricks/actions/workflows/build-and-test.yml/badge.svg
+![Jupyter workflow](https://github.com/blitznihar/SparkWithoutDatabricks/actions/workflows/build-and-test.yml/badge.svg)
+![VSCode](https://user-images.githubusercontent.com/25181517/192108891-d86b6220-e232-423a-bf5f-90903e6887c3.png)
+![Jupyter Notebooks](https://user-images.githubusercontent.com/25181517/183914128-3fc88b4a-4ac1-40e6-9443-9a30182379b7.png)
+![Python](https://user-images.githubusercontent.com/25181517/183423507-c056a6f9-1ba8-4312-a350-19bcbc5a8697.png)
+![Pandas](https://github.com/marwin1991/profile-technology-icons/assets/76012086/24b02d77-2f28-43c7-b5d6-e15e3395851b)
+![PyTest](https://user-images.githubusercontent.com/25181517/184117132-9e89a93b-65fb-47c3-91e7-7d0f99e7c066.png)
+![Apache Spark](https://user-images.githubusercontent.com/25181517/184357834-eba1eee1-6074-4b9c-8ed3-5373868096cc.png)
+
+
 <h1>PySpark, Delta Lake, Apache Arrow, Pandas</h1>
 
 <table>
