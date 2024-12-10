@@ -18,3 +18,4 @@ black
 isort
 bandit
 testbook
+scipy
