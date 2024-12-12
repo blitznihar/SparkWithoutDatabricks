@@ -18,4 +18,8 @@ black
 isort
 bandit
 testbook
+<<<<<<< HEAD
 seaborn
+=======
+scipy
+>>>>>>> origin/main
