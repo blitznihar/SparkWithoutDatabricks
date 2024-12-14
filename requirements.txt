@@ -20,3 +20,4 @@ bandit
 testbook
 seaborn
 scipy
+statsmodels
